@@ -3,6 +3,8 @@ package tomist.core.singletone;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import tomist.core.AppConfig;
 import tomist.core.member.MemberService;
 
@@ -27,5 +29,18 @@ public class SingletonTest {
         SingletonService singletonService1 = SingletonService.getInstance();
         SingletonService singletonService2 = SingletonService.getInstance();
         Assertions.assertThat(singletonService1).isEqualTo(singletonService2);
+    }
+
+    @Test
+    @DisplayName("스프링 컨테이너와 싱글톤")
+    void springContainer(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        MemberService memberService1 = ac.getBean("memberService", MemberService.class);
+        MemberService memberService2 = ac.getBean("memberService", MemberService.class);
+
+        System.out.println("memberService1 : " + memberService1);
+        System.out.println("memberService2 : " + memberService2);
+
+        Assertions.assertThat(memberService1).isEqualTo(memberService2);
     }
 }
