@@ -1,2 +1,2 @@
->memberService = tomist.core.member.MemberServiceImpl@7e053511
-FmemberService.getClass() = class tomist.core.member.MemberServiceImpl
+?memberService1 = tomist.core.member.MemberServiceImpl@6dab9b6d
+>memberService1 = tomist.core.member.MemberServiceImpl@676cf48
