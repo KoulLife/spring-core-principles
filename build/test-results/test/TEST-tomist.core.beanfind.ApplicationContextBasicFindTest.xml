@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tomist.core.beanfind.ApplicationContextBasicFindTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-08T06:45:55" hostname="Dongikui-MacBookAir.local" time="0.008">
-  <properties/>
-  <testcase name="빈 이름으로 조회" classname="tomist.core.beanfind.ApplicationContextBasicFindTest" time="0.008"/>
-  <system-out><![CDATA[memberService = tomist.core.member.MemberServiceImpl@7e053511
-memberService.getClass() = class tomist.core.member.MemberServiceImpl
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
