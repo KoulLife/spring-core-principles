@@ -43,4 +43,12 @@ public class SingletonTest {
 
         Assertions.assertThat(memberService1).isEqualTo(memberService2);
     }
+
+    @Test
+    void configureDeep(){
+      ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+      AppConfig config = ac.getBean(AppConfig.class);
+
+      System.out.println("config = " + config.getClass());
+    }
 }

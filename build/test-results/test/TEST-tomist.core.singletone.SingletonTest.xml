@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tomist.core.singletone.SingletonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-13T03:37:44" hostname="Dongikui-MacBookAir.local" time="0.179">
+  <properties/>
+  <testcase name="configureDeep()" classname="tomist.core.singletone.SingletonTest" time="0.179"/>
+  <system-out><![CDATA[config = class tomist.core.AppConfig$$SpringCGLIB$$0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

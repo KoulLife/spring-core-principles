@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tomist.core.singletone.CoffeeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-12T19:11:33" hostname="Dongikui-MacBookAir.local" time="0.129">
-  <properties/>
-  <testcase name="test()" classname="tomist.core.singletone.CoffeeTest" time="0.129"/>
-  <system-out><![CDATA[coffee1's name is chocolate
-coffee1's price is 6100
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
